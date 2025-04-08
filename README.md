@@ -1,55 +1,68 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🌤️ Météo App (React Native + Expo)
 
-## Get started
+Une application météo développée avec **React Native** et **Expo**, utilisant l'API [Open-Meteo](https://open-meteo.com) pour afficher la météo actuelle, les prévisions horaires et un fond dynamique selon les conditions météo.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Fonctionnalités
 
-2. Start the app
+- 📍 Récupération automatique ou manuelle de la localisation
+- ☁️ Température, ressenti, humidité, icône météo
+- ⏱️ Prévisions horaires glissables sur 24h
+- 🎨 Fond dynamique selon le `weather_code` (ciel, pluie, neige...)
+- 🔍 Recherche de ville avec l’API de géocodage d'Open-Meteo
+- 📱 UI inspirée de l'application iOS Météo
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## 📦 Installation
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/ivan9630/meteo-app.git
+cd Meteo
+npm install
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+📁 Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+.
+├── app/
+│   ├── components/         # Composants UI (ex : WeatherCard)
+│   ├── hooks/              # Hooks personnalisés (ex : useLocation)
+│   ├── screens/            # Écrans principaux (HomeScreen)
+│   ├── services/           # Services API (Open-Meteo, géocoding)
+├── assets/
+│   ├── weather-icons/      # Icônes météo (ensoleillé, pluie...)
+│   ├── backgrounds/        # Fonds météo dynamiques
 
-## Join the community
 
-Join our community of developers creating universal apps.
+🛠️ Technologies
+React Native
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# Meteo
-Météo
->>>>>>> 49ec68afdc41631dc50b097fd417ac7252336cf0
+Expo
+
+axios
+
+expo-location
+
+Open-Meteo API
+
+TypeScript
+
+
+📸 Aperçu
+📷 Ajoute ici des captures d'écran plus tard :
+
+ Écran principal
+
+ Recherche de ville
+
+ Prévision horaire glissable
+
+ Fond météo dynamique
+
+🙋‍♂️ Auteur
+Développé par @ivan9630 – GitHub
